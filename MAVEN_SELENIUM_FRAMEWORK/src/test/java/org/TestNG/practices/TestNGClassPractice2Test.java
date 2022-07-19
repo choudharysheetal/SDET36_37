@@ -17,7 +17,8 @@ public class TestNGClassPractice2Test {
 	public void Test3() {
 		System.out.println("Test3 -> class2");
 		System.out.println("Test4 -> class2");
-		System.out.println("hii");
+		System.out.println("bye");
+		System.out.println("hi");
 	//arup jana
 	}
 	
