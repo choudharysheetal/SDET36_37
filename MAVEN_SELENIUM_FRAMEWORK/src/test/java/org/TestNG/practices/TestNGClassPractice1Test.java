@@ -24,7 +24,7 @@ public class TestNGClassPractice1Test {
 	@Test
 	public void Test3() {
 		System.out.println("Test3 -> class1");
-		
+		System.out.println("Test4 -> class1");
 	}
 
 }
