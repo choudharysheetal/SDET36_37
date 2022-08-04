@@ -1,53 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results total="9" passed="9" failed="0" skipped="0">
+<testng-results total="1" passed="0" failed="0" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-07-18T10:13:01Z" name="Suite" finished-at="2022-07-18T10:13:02Z" duration-ms="124">
+  <suite started-at="2022-07-25T12:35:18Z" name="Default suite" finished-at="2022-07-25T12:35:18Z" duration-ms="64">
     <groups>
     </groups>
-    <test started-at="2022-07-18T10:13:01Z" name="Test" finished-at="2022-07-18T10:13:02Z" duration-ms="124">
-      <class name="org.TestNG.practices.TestNGClassPractice1Test">
-        <test-method signature="Test1()[pri:0, instance:org.TestNG.practices.TestNGClassPractice1Test@3f67593e]" started-at="2022-07-18T15:43:02Z" name="Test1" finished-at="2022-07-18T15:43:02Z" duration-ms="23" status="PASS">
+    <test started-at="2022-07-25T12:35:18Z" name="Default test" finished-at="2022-07-25T12:35:18Z" duration-ms="64">
+      <class name="org.TestNG.practices.CrossBrowserTest">
+        <test-method is-config="true" signature="configBeforeClass(java.lang.String)[pri:0, instance:org.TestNG.practices.CrossBrowserTest@12359a82]" started-at="2022-07-25T05:35:18Z" name="configBeforeClass" finished-at="2022-07-25T05:35:18Z" duration-ms="0" status="FAIL">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'BROWSER' is required by @Configuration on method configBeforeClass but has not been marked @Optional or defined
+in C:\Users\Admin\AppData\Local\Temp\testng-eclipse--1036317949\testng-customsuite.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'BROWSER' is required by @Configuration on method configBeforeClass but has not been marked @Optional or defined
+in C:\Users\Admin\AppData\Local\Temp\testng-eclipse--1036317949\testng-customsuite.xml
+	at org.testng.internal.Parameters.createParameters(Parameters.java:154)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:361)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:84)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:197)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:170)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:104)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1191)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.run(TestNG.java:1024)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Test1 -->
-        <test-method signature="Test2()[pri:0, instance:org.TestNG.practices.TestNGClassPractice1Test@3f67593e]" started-at="2022-07-18T15:43:02Z" name="Test2" finished-at="2022-07-18T15:43:02Z" duration-ms="9" status="PASS">
+        </test-method> <!-- configBeforeClass -->
+        <test-method signature="remotteExcecution()[pri:0, instance:org.TestNG.practices.CrossBrowserTest@12359a82]" started-at="2022-07-25T05:35:18Z" name="remotteExcecution" finished-at="2022-07-25T05:35:18Z" duration-ms="11" status="SKIP">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Test2 -->
-        <test-method signature="Test3()[pri:0, instance:org.TestNG.practices.TestNGClassPractice1Test@3f67593e]" started-at="2022-07-18T15:43:02Z" name="Test3" finished-at="2022-07-18T15:43:02Z" duration-ms="3" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Test3 -->
-      </class> <!-- org.TestNG.practices.TestNGClassPractice1Test -->
-      <class name="org.TestNG.practices.TestNGClassPractice2Test">
-        <test-method signature="Test1()[pri:0, instance:org.TestNG.practices.TestNGClassPractice2Test@1115ec15]" started-at="2022-07-18T15:43:02Z" name="Test1" finished-at="2022-07-18T15:43:02Z" duration-ms="2" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Test1 -->
-        <test-method signature="Test2()[pri:0, instance:org.TestNG.practices.TestNGClassPractice2Test@1115ec15]" started-at="2022-07-18T15:43:02Z" name="Test2" finished-at="2022-07-18T15:43:02Z" duration-ms="3" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Test2 -->
-        <test-method signature="Test3()[pri:0, instance:org.TestNG.practices.TestNGClassPractice2Test@1115ec15]" started-at="2022-07-18T15:43:02Z" name="Test3" finished-at="2022-07-18T15:43:02Z" duration-ms="5" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Test3 -->
-      </class> <!-- org.TestNG.practices.TestNGClassPractice2Test -->
-      <class name="org.TestNG.practices.TestNGClassPractice3Test">
-        <test-method signature="Test1()[pri:0, instance:org.TestNG.practices.TestNGClassPractice3Test@82ea68c]" started-at="2022-07-18T15:43:02Z" name="Test1" finished-at="2022-07-18T15:43:02Z" duration-ms="2" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Test1 -->
-        <test-method signature="Test2()[pri:0, instance:org.TestNG.practices.TestNGClassPractice3Test@82ea68c]" started-at="2022-07-18T15:43:02Z" name="Test2" finished-at="2022-07-18T15:43:02Z" duration-ms="3" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Test2 -->
-        <test-method signature="Test3()[pri:0, instance:org.TestNG.practices.TestNGClassPractice3Test@82ea68c]" started-at="2022-07-18T15:43:02Z" name="Test3" finished-at="2022-07-18T15:43:02Z" duration-ms="2" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Test3 -->
-      </class> <!-- org.TestNG.practices.TestNGClassPractice3Test -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+        </test-method> <!-- remotteExcecution -->
+      </class> <!-- org.TestNG.practices.CrossBrowserTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

@@ -14,6 +14,7 @@ public class TestNGClassPractice1Test {
 		System.out.println("browser---->"+browser);
 		System.out.println("userName---->"+userName);
 		System.out.println("password---->"+password);
+		System.out.println("Hi...");
 		
 	}
 	@Test
